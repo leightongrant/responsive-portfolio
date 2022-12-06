@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
 
+    <script src="https://kit.fontawesome.com/b547bfc4bb.js" crossorigin="anonymous"></script>
+
     <title>Leighton Porfolio</title>
 </head>
 
@@ -16,33 +18,155 @@
     <!-- main logo / nav -->
     <header>
         <h1>Leighton's Portfolio</h1>
-        <nav>
-        </nav>
     </header>
 
     <!-- hero banner -->
     <section class="hero-banner">
-        <div>
-            <h2>Cool subtitle here!</h2>
+        <div class="hero-container">
+            <div class="social">
+                <ul class="social-links">
+                    <li>
+                        <a href="https://linkedin.com" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/misterouija" target="_blank">
+                            <i class="fa-brands fa-square-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fa-brands fa-square-twitter"></i></a>
+                    </li>
+                    <li><a href="https://stackoverflow.com" target="_blank">
+                            <i class="fa-brands fa-stack-overflow"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact-link">
+                <a href="#contact" class="contact-button">Contact Me <i class="fa-solid fa-angles-down"></i></a>
+            </div>
+        </div>
+        <div class="avatar">
+            <div class="logo">
+                <h2>Leighton's Portfolio</h2>
+            </div>
+            <div class="avatar-img">
+                <img src="../images/avatar.jpg" alt="avatar">
+            </div>
         </div>
     </section>
 
+    <!-- nav -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- main -->
     <main class="page-wrapper">
         <!-- about me -->
         <section class="page-section" id="about">
-            <h2>About Me</h2>
+            <h2 class="title">About Me</h2>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia omnis doloribus reprehenderit
+                    voluptate minus cupiditate, laudantium, tempore enim saepe numquam? Quidem, quod! Perferendis, unde
+                    sunt animi perspiciatis eius vero?
+                </p>
+            </div>
         </section>
 
         <!-- portfolio container -->
         <section class="page-section" id="work">
-            <h2>Work</h2>
+            <h2 class="title">Work</h2>
+            <div class="content">
+                <a href="https://misterouija.github.io/prework-study-guide/" class="project project-1">
+                    <div class="project-label">
+                        <h3>Pre-work Study Guide Project</h3>
+                        <p>HTML / CSS</p>
+                    </div>
+                </a>
+                <a href="https://misterouija.github.io/08-Stu-Project-Landing-Page/" class="project project-2">
+                    <div class="project-label">
+                        <h3>Landing Page </h3>
+                        <p>HTML / CSS</p>
+                    </div>
+                </a>
+                <a href="https://misterouija.github.io/04-code-refactor-lesson/" class="project project-3">
+                    <div class="project-label">
+                        <h3>Code Refactor Project</h3>
+                        <p>HTML / CSS</p>
+                    </div>
+                </a>
+                <a href="" class="project project-4">
+                    <div class="project-label">
+                        <h3>Project Four</h3>
+                        <p>HTML / CSS</p>
+                    </div>
+                </a>
+                <a href="" class="project project-5">
+                    <div class="project-label">
+                        <h3>Project Five</h3>
+                        <p>HTML / CSS</p>
+                    </div>
+                </a>
+                <a href="" class="project project-6">
+                    <div class="project-label">
+                        <h3>Project Six</h3>
+                        <p>HTML / CSS</p>
+                    </div>
+                </a>
+            </div>
         </section>
 
         <!-- contact -->
         <section class="page-section contact" id="contact">
-            <h2>Contact Me</h2>
+            <h2 class="title">Contact Me</h2>
+            <div class="content contact-form">
+                <form>
+                    <div class="contact-name">
+                        <div class="firstname">
+                            <label for="fname">First Name:</label><br>
+                            <input type="text" aria-required="true" id="fname" name="fname" placeholder="Mary">
+                        </div>
+
+                        <div class="lastname">
+                            <label for="lname">Last Name:</label><br>
+                            <input type="text" aria-required="true" id="lname" name="lname" placeholder="Jane">
+                        </div>
+                    </div>
+
+                    <div class="phonenumber">
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="555-9999-9999">
+                    </div>
+
+                    <div class="email">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="mary.jane@example.com">
+                    </div>
+
+                    <div class="messsage">
+                        <label for="message">Message:</label><br>
+                        <textarea name="message" aria-required="true" id="message" cols="30" rows="10"></textarea>
+                        <button type="submit">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <div>
+
+        </div>
+        <div>
+            <h3>Leighton Grant</h3>
+        </div>
+        <div></div>
+    </footer>
 
 </body>
 
