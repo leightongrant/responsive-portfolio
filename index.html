@@ -124,36 +124,63 @@
         <!-- contact -->
         <section class="page-section contact" id="contact">
             <h2 class="title">Contact Me</h2>
-            <div class="content contact-form">
-                <form>
-                    <div class="contact-name">
-                        <div class="firstname">
-                            <label for="fname">First Name:</label><br>
-                            <input type="text" aria-required="true" id="fname" name="fname" placeholder="Mary">
+            <div class="content">
+                <div class="contact-info">
+                    <ul class="contact-links">
+                        <li>
+                            <a href="https://linkedin.com" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/misterouija" target="_blank">
+                                <i class="fa-brands fa-square-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" target="_blank">
+                                <i class="fa-brands fa-square-twitter"></i></a>
+                        </li>
+                        <li><a href="https://stackoverflow.com" target="_blank">
+                                <i class="fa-brands fa-stack-overflow"></i></a></li>
+                    </ul>
+                    <ul class="phone-email">
+                        <li><a href="tel:+">
+                                <i class="fa-solid fa-phone"> 555-555-5555</i> </a></li>
+                        <li><a href="mailto:">
+                                <i class="fa-solid fa-envelope"> leightongrant@example.com</i></a></li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="contact-name">
+                            <div class="firstname">
+                                <label for="fname">First Name:</label><br>
+                                <input type="text" aria-required="true" id="fname" name="fname" placeholder="Mary">
+                            </div>
+
+                            <div class="lastname">
+                                <label for="lname">Last Name:</label><br>
+                                <input type="text" aria-required="true" id="lname" name="lname" placeholder="Jane">
+                            </div>
                         </div>
 
-                        <div class="lastname">
-                            <label for="lname">Last Name:</label><br>
-                            <input type="text" aria-required="true" id="lname" name="lname" placeholder="Jane">
+                        <div class="phonenumber">
+                            <label for="phone">Phone Number:</label><br>
+                            <input type="tel" id="phone" name="phone" placeholder="555-9999-9999">
                         </div>
-                    </div>
 
-                    <div class="phonenumber">
-                        <label for="phone">Phone Number:</label><br>
-                        <input type="tel" id="phone" name="phone" placeholder="555-9999-9999">
-                    </div>
+                        <div class="email">
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="mary.jane@example.com">
+                        </div>
 
-                    <div class="email">
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" placeholder="mary.jane@example.com">
-                    </div>
-
-                    <div class="messsage">
-                        <label for="message">Message:</label><br>
-                        <textarea name="message" aria-required="true" id="message" cols="30" rows="10"></textarea>
-                        <button type="submit">Send Message <i class="fa-regular fa-paper-plane"></i></button>
-                    </div>
-                </form>
+                        <div class="messsage">
+                            <label for="message">Message:</label><br>
+                            <textarea name="message" aria-required="true" id="message" cols="30" rows="10"></textarea>
+                            <button type="submit">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

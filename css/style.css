@@ -99,7 +99,7 @@ header {
 
 .social-links {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .social-links i {
@@ -294,6 +294,49 @@ nav a:hover {
 #contact .content {
     width: 80%;
     margin: auto;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-links i {
+    color: var(--primary-color-2);
+    font-size: 25px;
+}
+
+.contact-links i:hover {
+    color: var(--primary-color);
+}
+
+.phone-email {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-flow: wrap;
+}
+
+.phone-email i {
+    color: var(--primary-color-2);
+    font-size: 15px;
+}
+
+.phone-email i:hover {
+    color: var(--primary-color);
+}
+
+
+
+.contact-form {
     border: 1px solid var(--primary-color);
     padding: 50px;
     background-color: var(--secondary-color);
@@ -376,6 +419,10 @@ nav a:hover {
             "project-5 project-6";
     }
 
+    .phone-email {
+        justify-content: flex-start;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -403,6 +450,12 @@ nav a:hover {
     .social,
     .contact-link {
         visibility: hidden;
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
 }
