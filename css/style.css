@@ -240,19 +240,19 @@ header {
 
 .project-1 {
     grid-area: project-1;
-    background-image: url(../images/02-portfolio-1.jpg);
+    background-image: url(../images/pre-work.jpeg);
     background-size: cover;
 }
 
 .project-2 {
     grid-area: project-2;
-    background-image: url(../images/02-portfolio-2.jpg);
+    background-image: url(../images/landing.jpeg);
     background-size: cover;
 }
 
 .project-3 {
     grid-area: project-3;
-    background-image: url(../images/02-portfolio-3.jpg);
+    background-image: url(../images/horiseon.jpeg);
     background-size: cover;
 }
 
