@@ -232,7 +232,9 @@ header {
 #work .content>a:hover {
     /* background-color: rgba(0, 0, 0, 0.7); */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-    transform: scale(1.01);
+    opacity: 0.8;
+    border: 2px solid var(--base-color);
+    transform: scale(1.02);
     transition: 0.5s;
     /* height: 102%;
     width: 102%; */
