@@ -161,11 +161,11 @@ header {
 
 /* Nav styles
 ################################################# */
-nav {
+.primary-nav {
     margin-top: 50px;
 }
 
-nav ul {
+.primary-nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,14 +173,14 @@ nav ul {
     text-transform: uppercase;
 }
 
-nav a {
+.primary-nav a {
 
     /* text-decoration: none; */
     color: var(--primary-color-2);
     font-weight: 900;
 }
 
-nav a:hover {
+.primary-nav a:hover {
     color: var(--primary-color);
     text-decoration: none;
 }
@@ -395,16 +395,72 @@ nav a:hover {
 ################################################# */
 .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        "footer-contact footer-navigation"
+        "footer-bottom footer-bottom"
+    ;
     min-height: 100px;
     background-color: var(--base-color);
-    color: var(--primary-color)
+    color: var(--primary-color);
+    justify-items: start;
+
 }
 
-.footer div {
+.footer-contact {
+    grid-area: footer-contact;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-navigation {
+    grid-area: footer-navigation;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bottom {
+    grid-area: footer-bottom;
+}
+
+.footer>div {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+}
+
+
+.footer-nav a {
+
+    /* text-decoration: none; */
+    color: var(--primary-color-2);
+    font-weight: 200;
+}
+
+.footer-nav a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer-phone-email i {
+    color: var(--primary-color-2);
+    font-size: 15px;
+}
+
+.footer-phone-email i:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    background-color: var(--primary-color);
+    color: var(--base-color);
+    text-align: center;
+    width: 100%;
+    padding: 2px;
+    ;
 }
 
 /* Media Queries
@@ -456,6 +512,17 @@ nav a:hover {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "footer-contact "
+            "footer-navigation"
+            "footer-bottom"
+        ;
+
     }
 
 }
